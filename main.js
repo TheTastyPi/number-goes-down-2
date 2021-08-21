@@ -11,7 +11,7 @@ function nextFrame(timeStamp) {
   number += dt/1000;
   if (number > 25) {
     document.getElementById("number").innerText = "You lose"
-  } else document.getElementById("number").innerText = number;
+  } else document.getElementById("number").innerText = number.toFixed(Math.random()*3);
   window.requestAnimationFrame(nextFrame);
 }
 window.requestAnimationFrame(nextFrame);
