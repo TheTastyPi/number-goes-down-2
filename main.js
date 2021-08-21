@@ -12,5 +12,6 @@ function nextFrame(timeStamp) {
   if (number > 25) {
     document.getElementById("number").innerText = "You lose"
   } else document.getElementById("number").innerText = number;
+  window.requestAnimationFrame(nextFrame);
 }
-window.requestAnimationFrame(nextFrame)
+window.requestAnimationFrame(nextFrame);
